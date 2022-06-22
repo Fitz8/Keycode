@@ -5,8 +5,12 @@ const which = document.getElementById("which");
 
 
 document.addEventListener("keydown", (logkey) => {
-    pressed.textContent = `${logkey.key} was pressed!`;
     code.textContent = logkey.code;
-    key.textContent = logkey.key;
     which.textContent = logkey.which;
+    key.textContent = logkey.key;
+    if (logkey.code == "Space") {
+        pressed.textContent = "Space was pressed!";
+    } else {
+        pressed.textContent = `${logkey.key} was pressed!`;
+    }
 });
