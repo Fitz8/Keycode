@@ -4,22 +4,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <style> @import url('https://fonts.googleapis.com/css2?family=Prompt&display=swap');</style> 
     <title>Keycode Generator</title>
 </head>
 <body>
     <h1>Keycode Generator</h1>
-    <p id="pressed"></p>
-    <div>
-        <h2>.code value</h2>
-        <p id="code">insert value here</p>
-    </div>
-    <div>
-        <h2>.key value</h2>
-        <p id="key">insert value here</p>
-    </div>
-    <div>
-        <h2>.which value</h2>
-        <p id="which">insert value here</p>
+    <p id="pressed">Nothing has been pressed yet</p>
+    <div class="container">
+        <div class="cards">
+            <h2>.code value</h2>
+            <p id="code"></p>
+        </div>
+        <div class="cards">
+            <h2>.key value</h2>
+            <p id="key"></p>
+        </div>
+        <div class="cards">
+            <h2>.which value</h2>
+            <p id="which"></p>
+        </div>
     </div>
 <script src="app.js"></script> 
 </body>

@@ -1,7 +1,8 @@
-let pressed = document.getElementById("pressed");
-let key = document.getElementById("key");
-let which = document.getElementById("which");
-let code = document.getElementById("code");
+const pressed = document.getElementById("pressed");
+const code = document.getElementById("code");
+const key = document.getElementById("key");
+const which = document.getElementById("which");
+
 
 document.addEventListener("keydown", (logkey) => {
     pressed.textContent = `${logkey.key} was pressed!`;
